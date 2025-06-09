@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>FMLOJISTIK SeaLead Konşimento</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f5f5f5; }
+    h1 { text-align: center; color: #003366; }
+    form { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, textarea { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 4px; }
+    button { margin-top: 20px; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <h1>FMLOJISTIK SeaLead Konşimento Formu</h1>
+  <form method="POST">
+    <label>Shipper</label><input name="shipper" required>
+    <label>Consignee</label><input name="consignee">
+    <label>Notify Party</label><input name="notify">
+    <label>BL No</label><input name="blno" required>
+    <label>Container No</label><input name="container">
+    <label>Description of Goods</label><textarea name="goods"></textarea>
+    <button type="submit">📄 PDF OLUŞTUR</button>
+  </form>
+</body>
+</html>
